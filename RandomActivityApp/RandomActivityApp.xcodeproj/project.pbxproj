@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -71,15 +71,31 @@
 		37132A2D26DD4A8600F8D640 /* RandomActivityApp */ = {
 			isa = PBXGroup;
 			children = (
+				379D2F3626DD73F100F698E0 /* Controllers */,
+				379D2F3526DD5FB600F698E0 /* Views */,
 				37132A2E26DD4A8600F8D640 /* AppDelegate.swift */,
 				37132A3026DD4A8600F8D640 /* SceneDelegate.swift */,
-				37132A3226DD4A8600F8D640 /* ViewController.swift */,
-				37132A3426DD4A8600F8D640 /* Main.storyboard */,
 				37132A3726DD4A8700F8D640 /* Assets.xcassets */,
 				37132A3926DD4A8700F8D640 /* LaunchScreen.storyboard */,
 				37132A3C26DD4A8700F8D640 /* Info.plist */,
 			);
 			path = RandomActivityApp;
+			sourceTree = "<group>";
+		};
+		379D2F3526DD5FB600F698E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37132A3426DD4A8600F8D640 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		379D2F3626DD73F100F698E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37132A3226DD4A8600F8D640 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B2E9784BF57614423120C604 /* Pods */ = {
@@ -88,7 +104,6 @@
 				F4E2E10CDFEDCCB70F4BCE59 /* Pods-RandomActivityApp.debug.xcconfig */,
 				0BFE43A41239033F597DA6D7 /* Pods-RandomActivityApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
