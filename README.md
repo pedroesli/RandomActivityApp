@@ -8,3 +8,5 @@ Created by:
 - Rafael
 
 With lots of ❤️
+
+Edição feita por Pedro.
