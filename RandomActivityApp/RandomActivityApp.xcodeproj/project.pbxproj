@@ -13,9 +13,11 @@
 		37132A3626DD4A8600F8D640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37132A3426DD4A8600F8D640 /* Main.storyboard */; };
 		37132A3826DD4A8700F8D640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37132A3726DD4A8700F8D640 /* Assets.xcassets */; };
 		37132A3B26DD4A8700F8D640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37132A3926DD4A8700F8D640 /* LaunchScreen.storyboard */; };
+		66BED6885669558481AA7E90 /* Pods_RandomActivityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8937E28F814EED459938C09 /* Pods_RandomActivityApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BFE43A41239033F597DA6D7 /* Pods-RandomActivityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomActivityApp.release.xcconfig"; path = "Target Support Files/Pods-RandomActivityApp/Pods-RandomActivityApp.release.xcconfig"; sourceTree = "<group>"; };
 		37132A2B26DD4A8600F8D640 /* RandomActivityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomActivityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37132A2E26DD4A8600F8D640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37132A3026DD4A8600F8D640 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		37132A3726DD4A8700F8D640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37132A3A26DD4A8700F8D640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37132A3C26DD4A8700F8D640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8937E28F814EED459938C09 /* Pods_RandomActivityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomActivityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E2E10CDFEDCCB70F4BCE59 /* Pods-RandomActivityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomActivityApp.debug.xcconfig"; path = "Target Support Files/Pods-RandomActivityApp/Pods-RandomActivityApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BED6885669558481AA7E90 /* Pods_RandomActivityApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0786598A81C4C6A80FD7049C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8937E28F814EED459938C09 /* Pods_RandomActivityApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37132A2226DD4A8500F8D640 = {
 			isa = PBXGroup;
 			children = (
 				37132A2D26DD4A8600F8D640 /* RandomActivityApp */,
 				37132A2C26DD4A8600F8D640 /* Products */,
+				B2E9784BF57614423120C604 /* Pods */,
+				0786598A81C4C6A80FD7049C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = RandomActivityApp;
 			sourceTree = "<group>";
 		};
+		B2E9784BF57614423120C604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4E2E10CDFEDCCB70F4BCE59 /* Pods-RandomActivityApp.debug.xcconfig */,
+				0BFE43A41239033F597DA6D7 /* Pods-RandomActivityApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37132A3F26DD4A8700F8D640 /* Build configuration list for PBXNativeTarget "RandomActivityApp" */;
 			buildPhases = (
+				1D5AD71AB6C7A1A97D9987EB /* [CP] Check Pods Manifest.lock */,
 				37132A2726DD4A8500F8D640 /* Sources */,
 				37132A2826DD4A8500F8D640 /* Frameworks */,
 				37132A2926DD4A8500F8D640 /* Resources */,
+				37F13820C70AA26847EE5C4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D5AD71AB6C7A1A97D9987EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RandomActivityApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37F13820C70AA26847EE5C4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomActivityApp/Pods-RandomActivityApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RandomActivityApp/Pods-RandomActivityApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomActivityApp/Pods-RandomActivityApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37132A2726DD4A8500F8D640 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		37132A4026DD4A8700F8D640 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E2E10CDFEDCCB70F4BCE59 /* Pods-RandomActivityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		37132A4126DD4A8700F8D640 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFE43A41239033F597DA6D7 /* Pods-RandomActivityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
