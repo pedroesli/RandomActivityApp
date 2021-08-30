@@ -4,6 +4,7 @@ An iOS app that generates random activities for the user to do. And can be perso
 
 Created by:
 
+Ola Mundo
 - Pedro Ésli
 - Gustavo
 - Rafael
