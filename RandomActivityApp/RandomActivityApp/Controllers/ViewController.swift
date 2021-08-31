@@ -12,6 +12,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         overrideUserInterfaceStyle = .dark
+        
+        let a = UserData.shared
+        let b = UserData.shared
+        
+        if a == b {
+            print("aoba")
+        }
+        
     }
     
     @IBAction func configurationButtonClicked(_ sender: UIButton) {
