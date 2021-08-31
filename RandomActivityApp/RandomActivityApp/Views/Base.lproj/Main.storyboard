@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OxU-K2-E4z">
-                                <rect key="frame" x="20" y="20" width="374" height="100"/>
+                                <rect key="frame" x="20" y="40" width="374" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Am-Yh-Ayu">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="100"/>
@@ -93,7 +93,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Quk-3g-SEh">
-                                <rect key="frame" x="100" y="150" width="214" height="100"/>
+                                <rect key="frame" x="100" y="170" width="214" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="n9G-lj-saa">
                                         <rect key="frame" x="0.0" y="0.0" width="214" height="100"/>
@@ -128,7 +128,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRS-vW-Mxk">
-                                <rect key="frame" x="20" y="280" width="374" height="200"/>
+                                <rect key="frame" x="20" y="300" width="374" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn and play a new card game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="nfg-8w-3GY">
                                         <rect key="frame" x="10" y="0.0" width="354" height="200"/>
@@ -152,48 +152,50 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whv-iw-vkk">
-                                <rect key="frame" x="132" y="510" width="150" height="150"/>
+                                <rect key="frame" x="132" y="530" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="whv-iw-vkk" secondAttribute="height" multiplier="1:1" id="Hlj-Fs-PC5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="86"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="ColorButtton"/>
                                 <state key="normal" title="😐" backgroundImage="BotaoPrincipal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgt-OD-91X">
-                                <rect key="frame" x="179.5" y="701" width="55.5" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="gearshape" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45" scale="default" weight="regular"/>
-                                </state>
-                                <connections>
-                                    <action selector="configurationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pbb-dx-qfP"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Quk-3g-SEh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="6of-xI-gqj"/>
-                            <constraint firstItem="OxU-K2-E4z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DK9-2i-7zZ"/>
+                            <constraint firstItem="OxU-K2-E4z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="DK9-2i-7zZ"/>
                             <constraint firstItem="whv-iw-vkk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Da6-Gr-dVv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Quk-3g-SEh" secondAttribute="trailing" constant="100" id="F0g-0w-hEx"/>
                             <constraint firstItem="Quk-3g-SEh" firstAttribute="top" secondItem="OxU-K2-E4z" secondAttribute="bottom" constant="30" id="ODl-gC-Gyh"/>
                             <constraint firstItem="OxU-K2-E4z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QWP-kw-uIR"/>
                             <constraint firstItem="dRS-vW-Mxk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R7a-5T-Dqb"/>
-                            <constraint firstItem="vgt-OD-91X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RZT-w9-YKh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dRS-vW-Mxk" secondAttribute="trailing" constant="20" id="Vnh-tv-7EM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OxU-K2-E4z" secondAttribute="trailing" constant="20" id="gDy-tw-wHz"/>
                             <constraint firstItem="whv-iw-vkk" firstAttribute="top" secondItem="dRS-vW-Mxk" secondAttribute="bottom" constant="30" id="llN-cv-8qe"/>
                             <constraint firstItem="dRS-vW-Mxk" firstAttribute="top" secondItem="Quk-3g-SEh" secondAttribute="bottom" constant="30" id="rwk-XM-Gay"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vgt-OD-91X" secondAttribute="bottom" constant="20" id="u3G-BO-KzM"/>
                             <constraint firstItem="whv-iw-vkk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.362319" id="ypR-94-YYe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yiJ-Q2-qoE"/>
+                    <navigationItem key="navigationItem" id="yiJ-Q2-qoE">
+                        <barButtonItem key="rightBarButtonItem" id="R1N-vp-f3L">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vgt-OD-91X">
+                                <rect key="frame" x="329" y="1" width="65" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Filters">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45" scale="default" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="configurationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pbb-dx-qfP"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,15 +223,17 @@
     </scenes>
     <resources>
         <image name="BotaoPrincipal" width="150" height="143"/>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <namedColor name="ColorButtton">
+            <color red="0.75686274509803919" green="0.96078431372549022" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="CorView1">
-            <color red="0.67843137254901964" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.13725490196078433" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CorView2">
-            <color red="0.54509803921568623" green="0.29019607843137257" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.37254901960784315" green="0.65098039215686276" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="CorView3">
-            <color red="0.12941176470588237" green="0.54117647058823526" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98039215686274506" green="0.53725490196078429" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
