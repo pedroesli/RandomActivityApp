@@ -13,16 +13,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         overrideUserInterfaceStyle = .dark
     }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
-    }
     
     @IBAction func configurationButtonClicked(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Configuration", bundle: nil)
