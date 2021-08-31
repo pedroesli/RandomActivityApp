@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
@@ -28,7 +29,8 @@ class ViewController: UIViewController {
         let vc =  sb.instantiateViewController(identifier: "ConfigurationView") as! ConfigurationViewController
         
         
-        navigationController?.pushViewController(vc, animated: true)
+        //navigationController?.pushViewController(vc, animated: true)
+        show(vc, sender: self)
     }
 }
 

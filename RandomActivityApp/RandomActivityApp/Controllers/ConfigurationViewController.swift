@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ConfigurationViewController: UIViewController {
+class ConfigurationViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .dark
-        
-        title = "Filters"
     }
 
 }
