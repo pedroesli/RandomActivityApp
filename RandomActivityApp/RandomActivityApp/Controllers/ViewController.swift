@@ -13,12 +13,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         overrideUserInterfaceStyle = .dark
         
-        let a = UserData.shared
-        let b = UserData.shared
+        let testFilters = TypeFilter(array: [false, false, true, true, true, false, false, true, true])
         
-        if a == b {
-            print("aoba")
-        }
+        UserData.saveFilters(filter: testFilters)
+        
+        let a = UserData.getFilters()
+        
+        let data = a.getValuesAsBool()
+        
+        print(data as Any)
         
     }
     

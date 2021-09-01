@@ -9,10 +9,24 @@ import UIKit
 
 class UserData {
     
-    static var shared: UserData {
-        return UserData();
+}
+
+extension UserData {
+    
+    // Salvar array de booleans. FILTROS
+    
+    static public func saveFilters(filter: TypeFilter) {
+        UserDefaults.standard.set(filter.getValuesAsBool(), forKey: "FilterArray")
     }
     
-    private init() { }
+    // Load array de booleans. Retornar um array de booleans FILTROS
+    
+    static public func getFilters() -> TypeFilter {
+        
+        let array = UserDefaults.standard.array(forKey: "FilterArray") as? [Bool] ?? [Bool]()
+        
+        return TypeFilter(array: array)
+    }
+
     
 }
