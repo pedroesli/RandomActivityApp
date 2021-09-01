@@ -24,5 +24,10 @@ class ViewController: UIViewController {
         //navigationController?.pushViewController(vc, animated: true)
         show(vc, sender: self)
     }
+    
+    @IBAction func emojiFaceButtonClicked(_ sender: UIButton) {
+        
+    }
+    
 }
 
