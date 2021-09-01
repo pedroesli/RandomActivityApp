@@ -99,7 +99,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="n9G-lj-saa">
                                         <rect key="frame" x="0.0" y="0.0" width="190" height="100"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diffuculty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-Kl-2Yr">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="Zi8-Kl-2Yr">
                                                 <rect key="frame" x="0.0" y="0.0" width="190" height="70"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -201,6 +201,12 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activityInfoLabel" destination="nfg-8w-3GY" id="1dC-hX-iu5"/>
+                        <outlet property="difficultyInfoLabel" destination="bik-J0-YPH" id="AqK-l9-aPe"/>
+                        <outlet property="participantInfoLabel" destination="Oco-dC-Y53" id="unq-CG-BtJ"/>
+                        <outlet property="typeInfoLabel" destination="4dq-bg-m5P" id="RQq-eL-P1K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
