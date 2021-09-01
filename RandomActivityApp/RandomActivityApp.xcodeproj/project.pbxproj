@@ -80,7 +80,6 @@
 				37132A2E26DD4A8600F8D640 /* AppDelegate.swift */,
 				37132A3026DD4A8600F8D640 /* SceneDelegate.swift */,
 				37132A3726DD4A8700F8D640 /* Assets.xcassets */,
-				37132A3926DD4A8700F8D640 /* LaunchScreen.storyboard */,
 				37132A3C26DD4A8700F8D640 /* Info.plist */,
 			);
 			path = RandomActivityApp;
@@ -89,6 +88,7 @@
 		379D2F3526DD5FB600F698E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37132A3926DD4A8700F8D640 /* LaunchScreen.storyboard */,
 				37132A3426DD4A8600F8D640 /* Main.storyboard */,
 				379D2F3726DD796800F698E0 /* Configuration.storyboard */,
 			);
