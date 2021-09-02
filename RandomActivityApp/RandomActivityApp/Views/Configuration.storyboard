@@ -26,6 +26,9 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HMd-HQ-8ZP">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="t8p-wc-whT"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCE-IM-ghG">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -58,8 +61,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9bg-03-cfW">
+                                                <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9bg-03-cfW">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="ngH-mN-nwP"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wau-a0-Ndy">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -92,8 +98,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-EW-zC5">
+                                                <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-EW-zC5">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="niq-Z8-lcV"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🧘‍♀️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr2-jd-4TW">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -126,8 +135,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="37I-JI-8Lk">
+                                                <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="37I-JI-8Lk">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="KDV-gi-CWB"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kif-yC-YBN">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -160,8 +172,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vq1-6d-Tj6">
+                                                <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vq1-6d-Tj6">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="IOC-n5-R95"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBH-xd-Oha">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -194,8 +209,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-Ec-g1x">
+                                                <switch opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-Ec-g1x">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="AE8-qD-3fk"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOZ-yo-wln">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -228,8 +246,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-ej-xr6">
+                                                <switch opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-ej-xr6">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="JQE-Kc-SQT"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👨‍💻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXl-Lm-xfn">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -262,8 +283,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FOz-im-MGB">
+                                                <switch opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FOz-im-MGB">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="0xF-Ej-0W9"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🛠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKW-Jd-kf2">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -296,8 +320,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fQK-ri-s3c">
+                                                <switch opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fQK-ri-s3c">
                                                     <rect key="frame" x="316" y="14.666666666666664" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="filterSwitchPressed:" destination="ubk-4k-jMZ" eventType="valueChanged" id="3a6-7e-pBK"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtC-PJ-hj5">
                                                     <rect key="frame" x="20" y="12" width="34" height="36"/>
@@ -332,6 +359,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Filters" id="p4y-aZ-YsC"/>
+                    <connections>
+                        <outlet property="busyworkSwitch" destination="GU1-ej-xr6" id="1NV-Hu-Zd6"/>
+                        <outlet property="charitySwitch" destination="37I-JI-8Lk" id="1oE-li-CMZ"/>
+                        <outlet property="cookingSwitch" destination="vq1-6d-Tj6" id="Rif-rv-jum"/>
+                        <outlet property="diySwitch" destination="FOz-im-MGB" id="v9b-fA-Bv3"/>
+                        <outlet property="educationSwitch" destination="HMd-HQ-8ZP" id="Uyo-0k-hWY"/>
+                        <outlet property="musicSwitch" destination="Ymd-Ec-g1x" id="tFK-6I-5Qu"/>
+                        <outlet property="recreationalSwitch" destination="9bg-03-cfW" id="vO1-rP-5k4"/>
+                        <outlet property="relaxationSwitch" destination="eZy-EW-zC5" id="mnM-uA-FIx"/>
+                        <outlet property="socialSwitch" destination="fQK-ri-s3c" id="Tfr-E3-Mic"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TU9-Jt-P6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
