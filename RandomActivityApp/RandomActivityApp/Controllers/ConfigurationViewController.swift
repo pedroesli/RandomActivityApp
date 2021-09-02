@@ -13,6 +13,7 @@ class ConfigurationViewController: UITableViewController {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .dark
         tableView.alwaysBounceVertical = false
+        
     }
 
 }

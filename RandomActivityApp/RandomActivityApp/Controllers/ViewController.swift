@@ -28,13 +28,13 @@ class ViewController: UIViewController {
     }
     
     func configure(){
-        if isRequesting{
+        if isRequesting {
             return
         }
         
         DispatchQueue.global(qos: .background).async {
             self.isRequesting = true
-            self.activityRequest.getRandom { [weak self] result in
+            self.activityRequest.getRandom(type: UserData.getFilters(), complition: { [weak self] result in
                 switch result{
                 case .success(let activity):
                     DispatchQueue.main.async {
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
                 case .failure(let error):
                     print(error)
                 }
-            }
+            })
         }
     }
     

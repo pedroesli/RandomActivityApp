@@ -17,8 +17,21 @@ enum ActivityError: Error{
 struct ActivityRequest {
     let url = "https://www.boredapi.com/api/activity"
     
-    func getRandom(complition: @escaping (Result<Activity, ActivityError>) -> Void){
-        AF.request(url).response { response in
+    func getRandom(type: TypeFilter, complition: @escaping (Result<Activity, ActivityError>) -> Void){
+        
+        var tmpUrl = url
+        
+        let filters = type.getActiveValuesAsString()
+        
+        if !filters.isEmpty {
+            
+            tmpUrl.append("?type=")
+            
+            tmpUrl.append(filters.randomElement()!)
+            
+        }
+        
+        AF.request(tmpUrl).response { response in
             if response.error != nil {
                 print(response.error!)
                 complition(.failure(.responseError))
