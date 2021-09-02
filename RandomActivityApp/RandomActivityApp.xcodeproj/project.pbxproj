@@ -18,6 +18,8 @@
 		379D2F3826DD796800F698E0 /* Configuration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379D2F3726DD796800F698E0 /* Configuration.storyboard */; };
 		379D2F3A26DD7B3800F698E0 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D2F3926DD7B3800F698E0 /* ConfigurationViewController.swift */; };
 		66BED6885669558481AA7E90 /* Pods_RandomActivityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8937E28F814EED459938C09 /* Pods_RandomActivityApp.framework */; };
+		7B6C628726DEC187008858FF /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C628626DEC187008858FF /* UserData.swift */; };
+		7B78E8C326E009D7003CDDA2 /* TypeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B78E8C226E009D7003CDDA2 /* TypeFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3744131926DFF73C00469E13 /* ActivityRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRequest.swift; sourceTree = "<group>"; };
 		379D2F3726DD796800F698E0 /* Configuration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configuration.storyboard; sourceTree = "<group>"; };
 		379D2F3926DD7B3800F698E0 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		7B6C628626DEC187008858FF /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		7B78E8C226E009D7003CDDA2 /* TypeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeFilter.swift; sourceTree = "<group>"; };
 		E8937E28F814EED459938C09 /* Pods_RandomActivityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomActivityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E2E10CDFEDCCB70F4BCE59 /* Pods-RandomActivityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomActivityApp.debug.xcconfig"; path = "Target Support Files/Pods-RandomActivityApp/Pods-RandomActivityApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +91,8 @@
 				37132A3026DD4A8600F8D640 /* SceneDelegate.swift */,
 				37132A3726DD4A8700F8D640 /* Assets.xcassets */,
 				37132A3C26DD4A8700F8D640 /* Info.plist */,
+				7B6C628626DEC187008858FF /* UserData.swift */,
+				7B78E8C226E009D7003CDDA2 /* TypeFilter.swift */,
 			);
 			path = RandomActivityApp;
 			sourceTree = "<group>";
@@ -252,9 +258,11 @@
 			files = (
 				3744131A26DFF73C00469E13 /* ActivityRequest.swift in Sources */,
 				37132A3326DD4A8600F8D640 /* ViewController.swift in Sources */,
+				7B78E8C326E009D7003CDDA2 /* TypeFilter.swift in Sources */,
 				379D2F3A26DD7B3800F698E0 /* ConfigurationViewController.swift in Sources */,
 				37132A2F26DD4A8600F8D640 /* AppDelegate.swift in Sources */,
 				3744131726DFEEBE00469E13 /* Activity.swift in Sources */,
+                7B6C628726DEC187008858FF /* UserData.swift in Sources */,
 				37132A3126DD4A8600F8D640 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +412,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLB6AGL526;
+                DEVELOPMENT_TEAM = 9VJNM48GB5;
 				INFOPLIST_FILE = RandomActivityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLB6AGL526;
+                DEVELOPMENT_TEAM = 9VJNM48GB5;
 				INFOPLIST_FILE = RandomActivityApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
