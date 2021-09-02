@@ -16,11 +16,11 @@ enum Difficulty: String{
     init?(rawValue: Float) {
         let value = Int(rawValue * 100)
         switch value {
-        case 0...35:
+        case 0...20:
             self = .Easy
-        case 36...65:
+        case 21...45:
             self = .Medium
-        case 66...100:
+        case 46...100:
             self = .Hard
         default:
             self = .Easy

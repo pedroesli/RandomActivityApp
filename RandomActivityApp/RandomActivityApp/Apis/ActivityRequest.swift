@@ -32,8 +32,9 @@ struct ActivityRequest {
         }
         
         AF.request(tmpUrl).response { response in
+            
             if response.error != nil {
-                print(response.error!)
+                print("########" + response.error!.errorDescription! + "########")
                 complition(.failure(.responseError))
                 return
             }
