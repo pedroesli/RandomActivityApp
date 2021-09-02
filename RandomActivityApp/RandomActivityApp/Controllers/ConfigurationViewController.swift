@@ -20,25 +20,35 @@ class ConfigurationViewController: UITableViewController {
     @IBOutlet weak var busyworkSwitch: UISwitch!
     @IBOutlet weak var diySwitch: UISwitch!
     @IBOutlet weak var socialSwitch: UISwitch!
+    @IBOutlet weak var saveButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .dark
         tableView.alwaysBounceVertical = false
         
+        enableSaveButton(false)
+        
         values = UserData.getFilters().getValuesAsBool()
         setupSwitches()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        
-        let filters = TypeFilter(array: values)
-        UserData.saveFilters(filter: filters)
     }
 
     @IBAction func filterSwitchPressed(_ sender: UISwitch) {
         values[sender.tag] = !values[sender.tag]
+        
+        enableSaveButton(true)
+    }
+    
+    @IBAction func saveButtonPressed(_ sender: UIButton) {
+        let filters = TypeFilter(array: values)
+        UserData.saveFilters(filter: filters)
+        
+        enableSaveButton(false)
+    }
+    
+    func enableSaveButton(_ state: Bool){
+        saveButton.isEnabled = state
+        saveButton.isHighlighted = !state
     }
     
     func setupSwitches(){

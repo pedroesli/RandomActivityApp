@@ -8,6 +8,26 @@
 import UIKit
 import Alamofire
 
+enum Difficulty: String{
+    case Easy
+    case Medium
+    case Hard
+    
+    init?(rawValue: Float) {
+        let value = Int(rawValue * 100)
+        switch value {
+        case 0...35:
+            self = .Easy
+        case 36...65:
+            self = .Medium
+        case 66...100:
+            self = .Hard
+        default:
+            self = .Easy
+        }
+    }
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var typeInfoLabel: UILabel!
     @IBOutlet weak var participantInfoLabel: UILabel!
@@ -40,7 +60,8 @@ class ViewController: UIViewController {
                     DispatchQueue.main.async {
                         self?.typeInfoLabel.text = activity.type.capitalized
                         self?.participantInfoLabel.text = self!.randomParticipantEmojis(participants: activity.participants)
-                        self?.difficultyInfoLabel.text = "\(Int(activity.accessibility * 100))%"
+                        let diffuculty = Difficulty(rawValue: activity.accessibility)
+                        self?.difficultyInfoLabel.text = diffuculty?.rawValue
                         self?.activityInfoLabel.text = activity.activity
                         self?.isRequesting = false
                     }
@@ -49,6 +70,10 @@ class ViewController: UIViewController {
                 }
             })
         }
+    }
+    
+    func difficultyText(accessibility: String){
+        
     }
     
     func randomParticipantEmojis(participants: Int) -> String{
