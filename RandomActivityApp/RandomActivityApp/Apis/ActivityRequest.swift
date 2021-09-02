@@ -15,9 +15,9 @@ enum ActivityError: Error{
 }
 
 struct ActivityRequest {
-    let url = "https://www.boredapi.com/api/activity"
+    static let url = "https://www.boredapi.com/api/activity"
     
-    func getRandom(type: TypeFilter, complition: @escaping (Result<Activity, ActivityError>) -> Void){
+    static func getRandom(type: TypeFilter, complition: @escaping (Result<Activity, ActivityError>) -> Void){
         
         var tmpUrl = url
         

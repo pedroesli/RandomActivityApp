@@ -35,7 +35,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityInfoLabel: UILabel!
     @IBOutlet weak var randomActivityButton: UIButton!
     
-    let activityRequest = ActivityRequest()
     var isRequesting = false
     let participantEmojis:[String] = ["😉","🙂","😃","😎","😊","😙"]
     let randomActivityButtonEmojis:[String] = ["🤩","🤠","🥳","😋","😆","🤗","🙂","😎","😉","😋","😛","😙"]
@@ -54,7 +53,7 @@ class ViewController: UIViewController {
         
         DispatchQueue.global(qos: .background).async {
             self.isRequesting = true
-            self.activityRequest.getRandom(type: UserData.getFilters(), complition: { [weak self] result in
+            ActivityRequest.getRandom(type: UserData.getFilters(), complition: { [weak self] result in
                 switch result{
                 case .success(let activity):
                     DispatchQueue.main.async {
@@ -70,10 +69,6 @@ class ViewController: UIViewController {
                 }
             })
         }
-    }
-    
-    func difficultyText(accessibility: String){
-        
     }
     
     func randomParticipantEmojis(participants: Int) -> String{
@@ -106,8 +101,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func emojiFaceButtonClicked(_ sender: UIButton) {
-        sender.setTitle(randomButtonEmoji(), for: .normal)
+        UIView.performWithoutAnimation {
+            sender.setTitle(randomButtonEmoji(), for: .normal)
+        }
+        animate()
         configure()
+    }
+    
+    func animate(){
+        let oldButtonTransform = randomActivityButton.transform
+        let newButtonTransform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        UIView.animate(withDuration: 0.1) {
+            self.randomActivityButton.transform = newButtonTransform
+        } completion: { done in
+            UIView.animate(withDuration: 0.2) {
+                self.randomActivityButton.transform = oldButtonTransform
+            }
+        }
     }
     
 }

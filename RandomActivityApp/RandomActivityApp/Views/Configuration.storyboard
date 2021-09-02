@@ -367,7 +367,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Filters" id="p4y-aZ-YsC">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="fRt-ie-6wU">
+                        <barButtonItem key="rightBarButtonItem" id="fRt-ie-6wU">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="irK-2r-GvD">
                                 <rect key="frame" x="288" y="5" width="86" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
