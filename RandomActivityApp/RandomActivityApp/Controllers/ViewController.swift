@@ -13,11 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var participantInfoLabel: UILabel!
     @IBOutlet weak var difficultyInfoLabel: UILabel!
     @IBOutlet weak var activityInfoLabel: UILabel!
+    @IBOutlet weak var randomActivityButton: UIButton!
     
     let activityRequest = ActivityRequest()
     var isRequesting = false
     let participantEmojis:[String] = ["😉","🙂","😃","😎","😊","😙"]
-    let emojisButtons:[String] = []
+    let randomActivityButtonEmojis:[String] = ["🤩","🤠","🥳","😋","😆","🤗","🙂","😎","😉","😋","😛","😙"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
                 switch result{
                 case .success(let activity):
                     DispatchQueue.main.async {
-                        self?.typeInfoLabel.text = activity.type
+                        self?.typeInfoLabel.text = activity.type.capitalized
                         self?.participantInfoLabel.text = self!.randomParticipantEmojis(participants: activity.participants)
                         self?.difficultyInfoLabel.text = "\(Int(activity.accessibility * 100))%"
                         self?.activityInfoLabel.text = activity.activity
@@ -66,16 +67,21 @@ class ViewController: UIViewController {
         return pa
     }
     
+    func randomButtonEmoji() -> String{
+        let randomIndex = Int.random(in: 0..<participantEmojis.count)
+        return randomActivityButtonEmojis[randomIndex]
+    }
+    
     @IBAction func configurationButtonClicked(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Configuration", bundle: nil)
         let vc =  sb.instantiateViewController(identifier: "ConfigurationView") as! ConfigurationViewController
-        
         
         //navigationController?.pushViewController(vc, animated: true)
         show(vc, sender: self)
     }
     
     @IBAction func emojiFaceButtonClicked(_ sender: UIButton) {
+        sender.setTitle(randomButtonEmoji(), for: .normal)
         configure()
     }
     
