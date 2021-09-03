@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     
     var isRequesting = false
     let participantEmojis:[String] = ["😉","🙂","😃","😎","😊","😙"]
-    let randomActivityButtonEmojis:[String] = ["🤩","🤠","🥳","😋","😆","🤗","🙂","😎","😉","😋","😛","😙"]
+    let randomActivityButtonEmojis:[String] = ["🤩","🤠","😁","😋","😆","🤗","🙂","😎","😉","😋","😛","😙","😀","😄","😙","😜","😺","😸","😽"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
     }
     
     func randomButtonEmoji() -> String{
-        let randomIndex = Int.random(in: 0..<participantEmojis.count)
+        let randomIndex = Int.random(in: 0..<randomActivityButtonEmojis.count)
         return randomActivityButtonEmojis[randomIndex]
     }
     

@@ -27,6 +27,7 @@ class ConfigurationViewController: UITableViewController {
         overrideUserInterfaceStyle = .dark
         tableView.alwaysBounceVertical = false
         
+        saveButton.titleLabel?.highlightedTextColor = UIColor.darkGray
         enableSaveButton(false)
         
         values = UserData.getFilters().getValuesAsBool()
@@ -48,7 +49,7 @@ class ConfigurationViewController: UITableViewController {
     
     func enableSaveButton(_ state: Bool){
         saveButton.isEnabled = state
-        saveButton.isHighlighted = !state
+        saveButton.titleLabel?.isHighlighted = !state
     }
     
     func setupSwitches(){
