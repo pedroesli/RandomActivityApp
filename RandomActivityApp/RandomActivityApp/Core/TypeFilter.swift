@@ -35,4 +35,40 @@ public struct TypeFilter {
         
     }
     
+    public func getActiveValuesAsString() -> [String] {
+        
+        var tmpValues = [String]()
+        
+        for i in 0...(values.count - 1) {
+            
+            if values[i] == true {
+                switch i {
+                case 0:
+                    tmpValues.append("education")
+                case 1:
+                    tmpValues.append("recreational")
+                case 2:
+                    tmpValues.append("relaxation")
+                case 3:
+                    tmpValues.append("charity")
+                case 4:
+                    tmpValues.append("cooking")
+                case 5:
+                    tmpValues.append("music")
+                case 6:
+                    tmpValues.append("busywork")
+                case 7:
+                    tmpValues.append("diy")
+                case 8:
+                    tmpValues.append("social")
+                default:
+                    break
+                }
+            }
+        }
+        
+        return tmpValues
+        
+    }
+    
 }
