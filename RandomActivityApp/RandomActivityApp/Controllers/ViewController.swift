@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         overrideUserInterfaceStyle = .dark
         configure()
+        changeEmoji()
     }
     
     func configure(){
@@ -101,11 +102,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func emojiFaceButtonClicked(_ sender: UIButton) {
-        UIView.performWithoutAnimation {
-            sender.setTitle(randomButtonEmoji(), for: .normal)
-        }
+        changeEmoji()
         animate()
         configure()
+    }
+    
+    func changeEmoji(){
+        UIView.performWithoutAnimation {
+            randomActivityButton.setTitle(randomButtonEmoji(), for: .normal)
+        }
     }
     
     func animate(){
